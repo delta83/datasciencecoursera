@@ -1,0 +1,5 @@
+The file run_analysis.R contains the functions run_analysis and tidy_data.
+
+The function run_analysis, reads all the necessary data from the complete dataset provided - subject, activityTypes, featuresData, featuresDescription and activityData for both the test and the training set. It combines the data for the training and test set, factorized the activityNames, merged with the Subject for each measurement, kept only the mean and standard deviation information for the features and subsequntly provided descriptive names for these features for easy understandability.
+
+The function tidy_data, organizes the data by calculating the mean of the mean and standard deviation of all the features by each subject and activity name combination in the table as outputted by the run_analysis function, by using the plyr package in R.
